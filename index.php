@@ -2,233 +2,654 @@
 //var_dump($contenido);die();
 ?>
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<html>
+
 <head>
-    <title>Responsive Resume/CV Template for Developers</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head> 
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
+  <title>Joson</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar-wrapper">
-            <div class="profile-container">
-                <img class="profile" src="assets/fotos/<?php echo $contenido["cv"]["foto"];?>" alt="<?php echo $contenido["cv"]["nombre"];?>" title="<?php echo $contenido["cv"]["nombre"];?>" height="100px"/>
-                <h1 class="name"><?php echo $contenido["cv"]["nombre"];?></h1>
-                <h3 class="tagline"><?php echo $contenido["cv"]["profesion"];?></h3> 
-            </div><!--//profile-container-->
-            
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: frberon@gmail.com"><?php echo $contenido["cv"]["email"];?></a></li>
-                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:123123333"><?php echo $contenido["cv"]["telefono"];?></a></li>
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://google.com/" target="_blank"><?php echo $contenido["cv"]["web"];?></a></li>
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="#" target="_blank">linkedin.com/in/<?php echo $contenido["cv"]["linkedin"];?></a></li>
-                    <li class="github"><i class="fa fa-github"></i><a href="#" target="_blank">github.com/<?php echo $contenido["cv"]["github"];?></a></li>
-                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@<?php echo $contenido["cv"]["twitter"];?></a></li>
-                </ul>
-            </div><!--//contact-container-->
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Educaciòn</h2>
-                <div class="item">
-                    <h4 class="degree"><?php echo $contenido["cv"]["titulo1"];?></h4>
-                    <h5 class="meta"><?php echo $contenido["cv"]["institucion1"];?></h5>
-                    <div class="time"><?php echo $contenido["cv"]["fecha1"];?></div>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">B<?php echo $contenido["cv"]["titulo2"];?></h4>
-                    <h5 class="meta"><?php echo $contenido["cv"]["institucion2"];?></h5>
-                    <div class="time"><?php echo $contenido["cv"]["fecha2"];?></div>
-                </div><!--//item-->
-            </div><!--//education-container-->
-            
-            <div class="languages-container container-block">
-                <h2 class="container-block-title">Lenguajes</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Español <span class="lang-desc">(Native)</span></li>
-                    <li>Ingles <span class="lang-desc">(intermedio)</span></li>
-                  
-                </ul>
-            </div><!--//interests-->
-            
-            <div class="interests-container container-block">
-                <h2 class="container-block-title">Interes</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Entrenar</li>
-                    <li>Estudiar</li>
-                    
-                    <li>TV</li>
-                    <li>Cine</li>
-                </ul>
-            </div><!--//interests-->
-            
-        </div><!--//sidebar-wrapper-->
-        
-        <div class="main-wrapper">
-            
-            <section class="section summary-section">
-                <h2 class="section-title"><i class="fa fa-user"></i>Carrera profesional</h2>
-                <div class="summary">
-                    <p>Soy un Ingeniero en Desarrollo Full Stack con más de 6 años de experiencia en la creación de soluciones tecnológicas completas. Mi carrera se ha centrado en dominar tanto el desarrollo del lado del cliente como el del servidor, lo que me permite abordar proyectos de software de manera integral</p>
-                </div><!--//summary-->
-            </section><!--//section-->
-            
-            <section class="section experiences-section">
-                <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiencia</h2>
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Lead Developer</h3>
-                            <div class="time">2013 - 2014</div>
-                        </div><!--//upper-row-->
-                        <div class="company">tartup tresCumbres, SanJuan Argentina</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Como Lead Developer en Startup Hubs, he liderado equipos técnicos en el desarrollo de soluciones tecnológicas innovadoras. Mis responsabilidades incluyen:</p>  
-                        <li>Supervisé y gestioné un equipo de desarrolladores</li>
-                        <li>Diseñé y desarrollé arquitecturas de software escalables</li>
-                        <li>Colaboré con el equipo de producto en la definición de requisitos</li>
-                        <li>Implementé mejores prácticas de desarrollo ágil</li>
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Senior Software Engineer</h3>
-                            <div class="time">2014 - 2015</div>
-                        </div><!--//upper-row-->
-                        <div class="company">MercadoLibre, Buenos Aires Argentina</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>Como Senior Software Engineer en Mercado Libre, me enfoqué en el desarrollo de soluciones tecnológicas de alto impacto para uno de los principales líderes del comercio electrónico en América Latina. Mis responsabilidades incluyeron:</p>
-                        <li>Diseñé y desarrollé soluciones escalables que optimizaron la eficiencia de la plataforma</li>
-                        <li>Colaboré estrechamente con equipos multidisciplinarios para garantizar la entrega exitosa de productos tecnológicos</li>
-                        <li>Optimicé algoritmos y potencié el rendimiento de aplicaciones clave</li>
-                        
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">UI Developer</h3>
-                            <div class="time">2016 - 2023</div>
-                        </div><!--//upper-row-->
-                        <div class="company">BancoGalicia, Argentina</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
-                    </div><!--//details-->
-                </div><!--//item-->
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <h3>
+            <?php echo $contenido["header"]["nombre"];?>
+            </h3>
+            <span><?php echo $contenido["header"]["nombre2"];?></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">UI Developer</h3>
-                            <div class="time">2012 - 2014</div>
-                        </div><!--//upper-row-->
-                        <div class="company">BancoGalicia, Argentina</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                    <p>Durante mi tiempo en Banco Galicia, asumí el rol de UI Developer, donde me dediqué a perfeccionar y optimizar las interfaces de usuario tanto en aplicaciones web como móviles. Mis responsabilidades destacadas comprendieron:</p>
-                        <li>Diseñe y desarrolle las interfaces de usuario web y móviles.</li>
-                        <li>Colabore estrecha con diseñadores y equipos de experiencia de usuario.</li>
-                        <li>Implemente el uso de estándares de calidad y usabilidad.</li>  
-                    </div><!--//details-->
-                </div><!--//item-->
-            </section><!--//section-->
-            
-            <section class="section projects-section">
-                <h2 class="section-title"><i class="fa fa-archive"></i>Proyectos</h2>
-                <div class="intro">
-                <p>Durante mi carrera profesional, he liderado y contribuido a una variedad de proyectos emocionantes que han tenido un impacto significativo en la industria tecnológica. Aquí hay algunos ejemplos destacados:</p>
-                </div><!--//intro-->
-                <div class="item">
-                    <span class="project-title"><a href="#hook">Envios 2.0</a></span> - <span class="project-tagline">Como líder y colaborador clave en el proyecto Envios 2.0 en Mercado Libre, desempeñé un papel fundamental en la creación de soluciones tecnológicas innovadoras que revolucionaron el proceso de envío y entrega en línea en América Latina. Coordiné equipos multidisciplinarios y trabajé en estrecha colaboración con ellos para garantizar el éxito de este proyecto estratégico.</span>
-                    
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">DevStudio</a></span> - 
-                    <span class="project-tagline">En Banco Galicia, participé en el desarrollo y la implementación de una plataforma de pagos innovadora que permitió a nuestros clientes realizar transacciones de manera más eficiente y segura en un entorno global. Contribuí al diseño y desarrollo de arquitecturas de software escalables que respaldaron esta iniciativa </span>
-                </div><!--//item-->
-               
-            
-            <section class="skills-section section">
-                <h2 class="section-title"><i class="fa fa-rocket"></i>Mis Skills</h2>
-                <div class="skillset">        
-                    <div class="item">
-                        <h3 class="level-title">PHP</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="<?php echo $contenido["cv"]["php"];?>%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Javascript &amp; jQuery</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="<?php echo $contenido["cv"]["js"];?>%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Base de datos Mysql</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="<?php echo $contenido["cv"]["db"];?>%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Visual Studio 2019</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="<?php echo $contenido["cv"]["vs"];?>%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                   
-                    
-                </div>  
-            </section><!--//skills-section-->
-            
-        </div><!--//main-body-->
+          <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"><?php echo $contenido["header"]["acerca"];?></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="course.html"><?php echo $contenido["header"]["curso"];?> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="event.html"> <?php echo $contenido["header"]["eventos"];?> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html"><?php echo $contenido["header"]["contactenos"];?></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html"><?php echo $contenido["header"]["ingreso"];?></a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+              <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="detail-box">
+                    <div>
+                      <h1>
+                        E D U C A T I O N
+                      </h1>
+                      <a href="">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="detail-box">
+                    <div>
+                      <h1>
+                        E D U C A T I O N
+                      </h1>
+                      <a href="">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="detail-box">
+                    <div>
+                      <h1>
+                        E D U C A T I O N
+                      </h1>
+                      <a href="">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- special section -->
+
+  <section class="special_section">
+    <div class="container">
+      <div class="special_container">
+        <div class="box b1">
+          <div class="img-box">
+            <img src="images/award.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              BEST <br />
+              INDUSTRY LEADERS
+            </h4>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="box b2">
+          <div class="img-box">
+            <img src="images/study.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              LEARN <br />
+              COURSES ONLINE
+            </h4>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+        <div class="box b3">
+          <div class="img-box">
+            <img src="images/books-stack-of-three.png" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              BEST <br />
+              LIBRARY & STORE
+            </h4>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
- 
-    <footer class="footer">
-        <div class="text-center">
-                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
-</body>
-</html> 
+  </section>
 
+  <!-- end special section -->
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="side_img">
+      <img src="images/side-img.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img_container">
+            <div class="img-box b1">
+              <img src="images/a-1.jpg" alt="" />
+            </div>
+            <div class="img-box b2">
+              <img src="images/a-2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h3>
+                About Our College
+              </h3>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more it
+              </p>
+              <a href="">
+                Read More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- course section -->
+
+  <section class="course_section layout_padding-bottom">
+    <div class="side_img">
+      <img src="images/side-img.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="heading_container">
+        <h3>
+          POPULAR COURSES
+        </h3>
+        <p>
+          It is a long established fact that a reader will be distracted
+        </p>
+      </div>
+      <div class="course_container">
+        <div class="course_content">
+          <div class="box">
+            <img src="images/c-1.jpg" alt="" />
+            <a href="" class="">
+              <img src="images/link.png" alt="" />
+            </a>
+            <h5>
+              LMS <br />
+              Content
+            </h5>
+          </div>
+          <div class="box">
+            <img src="images/c-2.jpg" alt="" />
+            <a href="" class="">
+              <img src="images/link.png" alt="" />
+            </a>
+            <h5>
+              From <br />
+              Zero to Hero
+            </h5>
+          </div>
+        </div>
+        <div class="course_content">
+          <div class="box">
+            <img src="images/c-3.jpg" alt="" />
+            <a href="" class="">
+              <img src="images/link.png" alt="" />
+            </a>
+            <h5>
+              Learn <br />
+              Python – Interactive
+            </h5>
+          </div>
+          <div class="box">
+            <img src="images/c-4.jpg" alt="" />
+            <a href="" class="">
+              <img src="images/link.png" alt="" />
+            </a>
+            <h5>
+              Your <br />
+              Complete Guide
+            </h5>
+          </div>
+          <div class="box">
+            <img src="images/c-5.jpg" alt="" />
+            <a href="" class="">
+              <img src="images/link.png" alt="" />
+            </a>
+            <h5>
+              Photography
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="">
+          Read More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end course section -->
+
+  <!-- login section -->
+
+  <section class="login_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+              GET ONLINE COURSES FOR FREE
+            </h3>
+            <p>
+              Create your free account now and get immediate access to 100s of
+              online courses
+            </p>
+            <a href="">
+              REGISTER NOW
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="login_form">
+            <h5>
+              Login Now
+            </h5>
+            <form action="">
+              <div>
+                <input type="email" placeholder="Email " />
+              </div>
+              <div>
+                <input type="password" placeholder="Password" />
+              </div>
+              <button type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end login section -->
+
+  <!-- event section -->
+  <section class="event_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h3>
+          Events
+        </h3>
+        <p>
+          Upcoming Education Events to feed your brain.
+        </p>
+      </div>
+      <div class="event_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/event-img.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              Education Events 2021
+            </h4>
+            <h6>
+              8:00 AM - 5:00 PM VENICE, ITALY
+            </h6>
+          </div>
+          <div class="date-box">
+            <h3>
+              <span>
+                15
+              </span>
+              March
+            </h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/event-img.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              Education Events 2021
+            </h4>
+            <h6>
+              8:00 AM - 5:00 PM VENICE, ITALY
+            </h6>
+          </div>
+          <div class="date-box">
+            <h3>
+              <span>
+                15
+              </span>
+              February
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="">
+          Read More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end event section -->
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <h3>
+          What People Say
+        </h3>
+        <p>
+          It is a long established fact that a reader will be distracted
+        </p>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client.png" alt="" />
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Distracted by
+                </h5>
+                <p>
+                  It is a long established fact that a reader will be
+                  distracted by the readable content of a page when looking at
+                  its layout. The point of using Lorem Ipsum is that it has a
+                  more-or-less normal distribution of letters
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client.png" alt="" />
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Distracted by
+                </h5>
+                <p>
+                  It is a long established fact that a reader will be
+                  distracted by the readable content of a page when looking at
+                  its layout. The point of using Lorem Ipsum is that it has a
+                  more-or-less normal distribution of letters
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client.png" alt="" />
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Distracted by
+                </h5>
+                <p>
+                  It is a long established fact that a reader will be
+                  distracted by the readable content of a page when looking at
+                  its layout. The point of using Lorem Ipsum is that it has a
+                  more-or-less normal distribution of letters
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h3>
+                Contact Us
+              </h3>
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="contact-form">
+            <h5>
+              Get In Touch
+            </h5>
+            <form action="">
+              <div>
+                <input type="text" placeholder="Full Name " />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email Address" />
+              </div>
+              <div>
+                <input type="text" placeholder="Message" class="input_message" />
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn_on-hover">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_menu">
+            <h5>
+              QUICK LINKS
+            </h5>
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="course.html"> Courses </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="event.html"> Events </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_course">
+            <h5>
+              TOP RATED COURSE
+            </h5>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form, by
+              injected humou
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-5 offset-md-1">
+          <div class="info_news">
+            <h5>
+              FOR ANY QUERY, PLEASE WRITE TO US
+            </h5>
+            <div class="info_contact">
+              <a href="">
+                Location
+              </a>
+              <a href="">
+                demo@gmail.com
+              </a>
+              <a href="">
+                Call : +01 1234567890
+              </a>
+            </div>
+            <form action="">
+              <input type="text" placeholder="Enter Your email" />
+              <button>
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; 2021 All Rights Reserved By
+      <a href="https://html.design/">Free Html Templates</a>
+    </p>
+  
+  </footer>
+
+   
+  <footer class="container-fluid footer_section">
+  
+      <p>
+        Distributed By 
+        <a href="https://themewagon.com/">Themewagon</a>
+      </p>
+  
+  </footer>
+ 
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

@@ -45,7 +45,7 @@
           <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
             <ul class="navbar-nav  ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html"><?php echo $contenido["header"]["home"];?><span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html"><?php echo $contenido["header"]["acerca"];?></a>
@@ -87,10 +87,10 @@
                   <div class="detail-box">
                     <div>
                       <h1>
-                        E D U C A T I O N
+                      <?php echo $contenido["header"]["EDUCATION"];?>
                       </h1>
                       <a href="">
-                        Read More
+                      <?php echo $contenido["header"]["LeerMas"];?>
                       </a>
                     </div>
                   </div>
@@ -105,10 +105,10 @@
                   <div class="detail-box">
                     <div>
                       <h1>
-                        E D U C A T I O N
+                      <?php echo $contenido["header"]["EDUCATION"];?>
                       </h1>
                       <a href="">
-                        Read More
+                      <?php echo $contenido["header"]["LeerMas"];?>
                       </a>
                     </div>
                   </div>
@@ -123,10 +123,10 @@
                   <div class="detail-box">
                     <div>
                       <h1>
-                        E D U C A T I O N
+                      <?php echo $contenido["header"]["EDUCATION"];?>
                       </h1>
                       <a href="">
-                        Read More
+                      <?php echo $contenido["header"]["LeerMas"];?>
                       </a>
                     </div>
                   </div>
@@ -151,11 +151,11 @@
           </div>
           <div class="detail-box">
             <h4>
-              BEST <br />
-              INDUSTRY LEADERS
+            <?php echo $contenido["header"]["logro1"];?> <br />
+            <?php echo $contenido["header"]["logro1br"];?>
             </h4>
             <a href="">
-              Read More
+            <?php echo $contenido["header"]["LeerMasSpecial1"];?>
             </a>
           </div>
         </div>
@@ -165,11 +165,11 @@
           </div>
           <div class="detail-box">
             <h4>
-              LEARN <br />
-              COURSES ONLINE
+            <?php echo $contenido["header"]["logro2"];?> <br />
+            <?php echo $contenido["header"]["logro2br"];?>
             </h4>
             <a href="">
-              Read More
+            <?php echo $contenido["header"]["leermasSpecial2"];?>
             </a>
           </div>
         </div>
@@ -179,11 +179,11 @@
           </div>
           <div class="detail-box">
             <h4>
-              BEST <br />
-              LIBRARY & STORE
+            <?php echo $contenido["header"]["logro3"];?> <br />
+            <?php echo $contenido["header"]["logro3br"];?>
             </h4>
             <a href="">
-              Read More
+            <?php echo $contenido["header"]["leermasSpecial3"];?>
             </a>
           </div>
         </div>
@@ -193,8 +193,8 @@
 
   <!-- end special section -->
 
-  <!-- about section -->
   <section class="about_section layout_padding">
+    <!-- about section -->
     <div class="side_img">
       <img src="images/side-img.png" alt="" />
     </div>
@@ -214,15 +214,13 @@
           <div class="detail-box">
             <div class="heading_container">
               <h3>
-                About Our College
+                <?php echo $contenido["header"]["acerca2"];?>
               </h3>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more it
+              <?php echo $contenido["header"]["maravilla"];?>
               </p>
               <a href="">
-                Read More
+              <?php echo $contenido["header"]["leerAbaout"];?>
               </a>
             </div>
           </div>
@@ -242,10 +240,10 @@
     <div class="container">
       <div class="heading_container">
         <h3>
-          POPULAR COURSES
+        <?php echo $contenido["header"]["CursoPopulares"];?>
         </h3>
         <p>
-          It is a long established fact that a reader will be distracted
+        <?php echo $contenido["header"]["CurseCourse"];?>
         </p>
       </div>
       <div class="course_container">
@@ -256,8 +254,8 @@
               <img src="images/link.png" alt="" />
             </a>
             <h5>
-              LMS <br />
-              Content
+              <?php echo $contenido["header"]["LMScourse"];?><br />
+              <?php echo $contenido["header"]["ContentCourse"];?>
             </h5>
           </div>
           <div class="box">
@@ -266,8 +264,8 @@
               <img src="images/link.png" alt="" />
             </a>
             <h5>
-              From <br />
-              Zero to Hero
+              <?php echo $contenido["header"]["CourseHero"];?> <br />
+              <?php echo $contenido["header"]["ZerotoHero"];?>
             </h5>
           </div>
         </div>
@@ -278,8 +276,8 @@
               <img src="images/link.png" alt="" />
             </a>
             <h5>
-              Learn <br />
-              Python – Interactive
+              <?php echo $contenido["header"]["LearnCuorse"];?> <br />
+              <?php echo $contenido["header"]["PythonCurose"];?>
             </h5>
           </div>
           <div class="box">
@@ -288,8 +286,8 @@
               <img src="images/link.png" alt="" />
             </a>
             <h5>
-              Your <br />
-              Complete Guide
+              <?php echo $contenido["header"]["TuCurose"];?> <br />
+              <?php echo $contenido["header"]["GuiaCompletaCurse"];?>
             </h5>
           </div>
           <div class="box">
@@ -298,14 +296,14 @@
               <img src="images/link.png" alt="" />
             </a>
             <h5>
-              Photography
+            <?php echo $contenido["header"]["PhotoCurse"];?>
             </h5>
           </div>
         </div>
       </div>
       <div class="btn-box">
         <a href="">
-          Read More
+        <?php echo $contenido["header"]["LeerCuorse"];?>
         </a>
       </div>
     </div>
@@ -321,21 +319,20 @@
         <div class="col-md-6">
           <div class="detail-box">
             <h3>
-              GET ONLINE COURSES FOR FREE
+            <?php echo $contenido["header"]["freecourses"];?>
             </h3>
             <p>
-              Create your free account now and get immediate access to 100s of
-              online courses
+            <?php echo $contenido["header"]["freeaccount"];?>
             </p>
             <a href="">
-              REGISTER NOW
+            <?php echo $contenido["header"]["signuploginsection"];?>
             </a>
           </div>
         </div>
         <div class="col-md-6">
           <div class="login_form">
             <h5>
-              Login Now
+            <?php echo $contenido["header"]["inicialoginsection"];?>
             </h5>
             <form action="">
               <div>
@@ -344,7 +341,7 @@
               <div>
                 <input type="password" placeholder="Password" />
               </div>
-              <button type="submit">Login</button>
+              <button type="submit"><?php echo $contenido["header"]["button1loginsection"];?></button>
             </form>
           </div>
         </div>
@@ -359,10 +356,10 @@
     <div class="container">
       <div class="heading_container">
         <h3>
-          Events
+          <?php echo $contenido["header"]["EventosEvents"];?>
         </h3>
         <p>
-          Upcoming Education Events to feed your brain.
+        <?php echo $contenido["header"]["ParrafoEvent"];?>
         </p>
       </div>
       <div class="event_container">
@@ -372,18 +369,18 @@
           </div>
           <div class="detail-box">
             <h4>
-              Education Events 2021
+              <?php echo $contenido["header"]["EducacionEvents"];?>
             </h4>
             <h6>
-              8:00 AM - 5:00 PM VENICE, ITALY
+              <?php echo $contenido["header"]["HoraEvents"];?>
             </h6>
           </div>
           <div class="date-box">
             <h3>
               <span>
-                15
+              <?php echo $contenido["header"]["15"];?>
               </span>
-              March
+              <?php echo $contenido["header"]["Marzo"];?>
             </h3>
           </div>
         </div>
@@ -393,25 +390,25 @@
           </div>
           <div class="detail-box">
             <h4>
-              Education Events 2021
+            <?php echo $contenido["header"]["EducacionEvents"];?>
             </h4>
             <h6>
-              8:00 AM - 5:00 PM VENICE, ITALY
+            <?php echo $contenido["header"]["HoraEvents"];?>
             </h6>
           </div>
           <div class="date-box">
             <h3>
               <span>
-                15
+              <?php echo $contenido["header"]["15"];?>
               </span>
-              February
+              <?php echo $contenido["header"]["Marzo"];?>
             </h3>
           </div>
         </div>
       </div>
       <div class="btn-box">
         <a href="">
-          Read More
+        <?php echo $contenido["header"]["LeerEvents"];?>
         </a>
       </div>
     </div>
@@ -425,11 +422,11 @@
     <div class="container">
       <div class="heading_container">
         <h3>
-          What People Say
+           <?php echo $contenido["header"]["PeopleCliet"];?>
         </h3>
         <p>
-          It is a long established fact that a reader will be distracted
-        </p>
+          </p>
+          <?php echo $contenido["header"]["TestimonioClient"];?>
       </div>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -440,13 +437,10 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  Distracted by
+                <?php echo $contenido["header"]["MariaCliente"];?>
                 </h5>
                 <p>
-                  It is a long established fact that a reader will be
-                  distracted by the readable content of a page when looking at
-                  its layout. The point of using Lorem Ipsum is that it has a
-                  more-or-less normal distribution of letters
+                <?php echo $contenido["header"]["MariaClienteTestimonio"];?>
                 </p>
               </div>
             </div>
@@ -458,13 +452,11 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  Distracted by
+                <?php echo $contenido["header"]["MariaCliente"];?>
                 </h5>
                 <p>
-                  It is a long established fact that a reader will be
-                  distracted by the readable content of a page when looking at
-                  its layout. The point of using Lorem Ipsum is that it has a
-                  more-or-less normal distribution of letters
+                <?php echo $contenido["header"]["MariaClienteTestimonio"];?>
+
                 </p>
               </div>
             </div>
@@ -476,13 +468,10 @@
               </div>
               <div class="detail-box">
                 <h5>
-                  Distracted by
+                <?php echo $contenido["header"]["MariaCliente"];?>
                 </h5>
                 <p>
-                  It is a long established fact that a reader will be
-                  distracted by the readable content of a page when looking at
-                  its layout. The point of using Lorem Ipsum is that it has a
-                  more-or-less normal distribution of letters
+                <?php echo $contenido["header"]["MariaClienteTestimonio"];?>
                 </p>
               </div>
             </div>
@@ -511,11 +500,10 @@
           <div class="detail-box">
             <div class="heading_container">
               <h3>
-                Contact Us
+              <?php echo $contenido["header"]["contactenoscontactsection"];?>
               </h3>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable
+              <?php echo $contenido["header"]["porquecontactarnos"];?>
               </p>
             </div>
           </div>
@@ -523,24 +511,24 @@
         <div class="col-md-6">
           <div class="contact-form">
             <h5>
-              Get In Touch
+            <?php echo $contenido["header"]["ponerseencontactsection"];?>
             </h5>
             <form action="">
               <div>
-                <input type="text" placeholder="Full Name " />
+                <input type="text" placeholder= <?php echo $contenido["header"]["namecontactsection"];?> />
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
+                <input type="text" placeholder=<?php echo $contenido["header"]["numberphonecontactsection"];?> />
               </div>
               <div>
-                <input type="email" placeholder="Email Address" />
+                <input type="email" placeholder=<?php echo $contenido["header"]["emailcontactsection"];?> />
               </div>
               <div>
-                <input type="text" placeholder="Message" class="input_message" />
+                <input type="text" placeholder=<?php echo $contenido["header"]["messagecontactsection"];?> class="input_message" />
               </div>
               <div class="d-flex justify-content-center">
                 <button type="submit" class="btn_on-hover">
-                  Send
+                <?php echo $contenido["header"]["buttonenviarcontactsection"];?>
                 </button>
               </div>
             </form>
@@ -559,26 +547,26 @@
         <div class="col-md-3">
           <div class="info_menu">
             <h5>
-              QUICK LINKS
+              <?php echo $contenido["header"]["ENLACESRAPIDOSinfo"];?>
             </h5>
             <ul class="navbar-nav  ">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html"><?php echo $contenido["header"]["home"];?> <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About </a>
+                <a class="nav-link" href="about.html"> <?php echo $contenido["header"]["acerca"];?></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="course.html"> Courses </a>
+                <a class="nav-link" href="course.html"> <?php echo $contenido["header"]["curso"];?></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="event.html"> Events </a>
+                <a class="nav-link" href="event.html"> <?php echo $contenido["header"]["eventos"];?> </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us</a>
+                <a class="nav-link" href="contact.html"><?php echo $contenido["header"]["contactenos"];?></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
+                <a class="nav-link" href="login.html"><?php echo $contenido["header"]["ingreso"];?></a>
               </li>
             </ul>
           </div>
@@ -586,12 +574,10 @@
         <div class="col-md-3">
           <div class="info_course">
             <h5>
-              TOP RATED COURSE
+            <?php echo $contenido["header"]["CursoInfo"];?>
             </h5>
             <p>
-              There are many variations of passages of Lorem Ipsum available,
-              but the majority have suffered alteration in some form, by
-              injected humou
+            <?php echo $contenido["header"]["CalificacionInfo"];?>
             </p>
           </div>
         </div>
@@ -599,23 +585,23 @@
         <div class="col-md-5 offset-md-1">
           <div class="info_news">
             <h5>
-              FOR ANY QUERY, PLEASE WRITE TO US
+              <?php echo $contenido["header"]["WriteInfo"];?>
             </h5>
             <div class="info_contact">
               <a href="">
-                Location
+                <?php echo $contenido["header"]["UbicacionInfo"];?>
               </a>
               <a href="">
-                demo@gmail.com
+              <?php echo $contenido["header"]["GmailsInfo"];?>
               </a>
               <a href="">
-                Call : +01 1234567890
+              <?php echo $contenido["header"]["numeroInfo"];?>
               </a>
             </div>
             <form action="">
-              <input type="text" placeholder="Enter Your email" />
+              <input type="text" placeholder="<?php echo $contenido["header"]["enterYourEmail"];?>" />
               <button>
-                Subscribe
+              <?php echo $contenido["header"]["subsInfo"];?>
               </button>
             </form>
           </div>
